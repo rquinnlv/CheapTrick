@@ -1,0 +1,112 @@
+[0.000][INFO]:      ChromeDriver 23.0.1240.0 /Users/rqlocal/Documents/PERFQA11_ZTAF/CheapTrick/selenium_standalone_binaries/osx/googlechrome/64bit/23/chromedriver
+[0.603][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [ "--no-default-browser-check" ],
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.603][INFO]:      Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --use-mock-keychain --ignore-certificate-errors --no-default-browser-check about:blank
+[1.845][INFO]:      Connected to Chrome successfully. Version: 18.0.1025.168
+[1.876][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816)
+[1.877][FINE]:      Command finished (/session/b28d14bd34411b512fad363154728816) with response {
+   "sessionId": "b28d14bd34411b512fad363154728816",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "mac",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "18.0.1025.168",
+      "webStorageEnabled": true
+   }
+}
+
+[1.894][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816/url) with params {
+   "url": "http://www.zappos.com"
+}
+
+[1.894][FINER]:     Waiting for all views to stop loading...
+[1.895][FINER]:     Done waiting for all views to stop loading
+[2.734][FINER]:     Waiting for all views to stop loading...
+[2.783][FINER]:     Done waiting for all views to stop loading
+[2.783][FINE]:      Command finished (/session/b28d14bd34411b512fad363154728816/url) with response {
+   "sessionId": "b28d14bd34411b512fad363154728816",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.804][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816/element) with params {
+   "using": "name",
+   "value": "term"
+}
+
+[2.804][FINER]:     Waiting for all views to stop loading...
+[3.587][FINER]:     Done waiting for all views to stop loading
+[3.629][FINER]:     Waiting for all views to stop loading...
+[4.391][FINER]:     Done waiting for all views to stop loading
+[4.391][FINE]:      Command finished (/session/b28d14bd34411b512fad363154728816/element) with response {
+   "sessionId": "b28d14bd34411b512fad363154728816",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1355350224249"
+   }
+}
+
+[4.397][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816/element/:wdc:1355350224249/value) with params {
+   "id": ":wdc:1355350224249",
+   "value": [ "Green Shoes" ]
+}
+
+[4.397][FINER]:     Waiting for all views to stop loading...
+[4.441][FINER]:     Done waiting for all views to stop loading
+[5.781][FINER]:     Waiting for all views to stop loading...
+[5.797][FINER]:     Done waiting for all views to stop loading
+[5.797][FINE]:      Command finished (/session/b28d14bd34411b512fad363154728816/element/:wdc:1355350224249/value) with response {
+   "sessionId": "b28d14bd34411b512fad363154728816",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[5.799][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816/element/:wdc:1355350224249/submit) with params {
+   "id": ":wdc:1355350224249"
+}
+
+[5.799][FINER]:     Waiting for all views to stop loading...
+[5.831][FINER]:     Done waiting for all views to stop loading
+[5.895][FINER]:     Waiting for all views to stop loading...
+[8.364][FINER]:     Done waiting for all views to stop loading
+[8.364][FINE]:      Command finished (/session/b28d14bd34411b512fad363154728816/element/:wdc:1355350224249/submit) with response {
+   "sessionId": "b28d14bd34411b512fad363154728816",
+   "status": 0,
+   "value": null
+}
+
+[8.367][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816/title)
+[8.367][FINER]:     Waiting for all views to stop loading...
+[8.411][FINER]:     Done waiting for all views to stop loading
+[8.444][FINER]:     Waiting for all views to stop loading...
+[8.462][FINER]:     Done waiting for all views to stop loading
+[8.462][FINE]:      Command finished (/session/b28d14bd34411b512fad363154728816/title) with response {
+   "sessionId": "b28d14bd34411b512fad363154728816",
+   "status": 0,
+   "value": "green shoes, Shoes, Green at Zappos.com"
+}
+
+[8.465][FINE]:      Command received (/session/b28d14bd34411b512fad363154728816)
+[8.642][INFO]:      Chrome shutdown

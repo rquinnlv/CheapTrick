@@ -1,0 +1,9 @@
+<suite name="Order Review Test Suite" parallel="tests" thread-count="20">
+	
+	<test verbose="2" name="Works" annotations="JDK">
+		<classes>
+			<class name="com.zappos.ct.tests.works" />
+		</classes>
+	</test>
+	
+</suite>

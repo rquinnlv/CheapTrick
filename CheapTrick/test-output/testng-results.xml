@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10234" started-at="2012-12-12T22:57:01Z" finished-at="2012-12-12T22:57:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10234" started-at="2012-12-12T22:57:01Z" finished-at="2012-12-12T22:57:11Z">
+      <class name="com.zappos.ct.tests.Fail_Test">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.zappos.ct.tests.Fail_Test@2bd1e730]" name="setUpTest" is-config="true" duration-ms="8" started-at="2012-12-12T14:57:01Z" finished-at="2012-12-12T14:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="HomePageFail()[pri:0, instance:com.zappos.ct.tests.Fail_Test@2bd1e730]" name="HomePageFail" duration-ms="10224" started-at="2012-12-12T14:57:01Z" finished-at="2012-12-12T14:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageFail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zappos.ct.tests.Fail_Test@2bd1e730]" name="tearDown" is-config="true" duration-ms="75" started-at="2012-12-12T14:57:11Z" finished-at="2012-12-12T14:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zappos.ct.tests.Fail_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

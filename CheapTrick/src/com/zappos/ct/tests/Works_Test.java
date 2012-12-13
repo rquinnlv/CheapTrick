@@ -11,14 +11,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(ScreenshotListener.class)
+//@Listeners(ScreenshotListener.class)
 public class Works_Test extends SeleniumBase {
 
   @Test
-  public void HomePageTest() {
+  public void HomePageTest() throws Exception {
 	  
 	  WebDriver driver = getDriver();
-
+	  
+	  Thread.sleep(2000);
+	  
       driver.get("http://www.zappos.com");
 
       WebElement element = driver.findElement(By.name("term"));

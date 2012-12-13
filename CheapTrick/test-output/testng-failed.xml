@@ -5,8 +5,7 @@
     <classes>
       <class name="com.zappos.ct.tests.Works_Test">
         <methods>
-          <include name="setUpTest"/>
-          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="HomePageTest"/>
         </methods>
       </class> <!-- com.zappos.ct.tests.Works_Test -->

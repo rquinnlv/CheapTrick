@@ -69,7 +69,7 @@ public class SeleniumBase {
 		//set browser property
 		 if (System.getProperty("ct.browser") == null) {
 			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+			 driver = new RemoteWebDriver( new URL("http://ec2-54-241-124-236.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
 		 } else if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
 			 DesiredCapabilities abilities = DesiredCapabilities.internetExplorer();
 			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);

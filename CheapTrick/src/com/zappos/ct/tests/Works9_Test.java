@@ -35,7 +35,7 @@ public class Works9_Test extends SeleniumBase {
          }
          });*/
         
-        System.out.println("Page title is: " + driver.getTitle());
+        System.out.println("Cart Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
         
         driver.quit();
     }

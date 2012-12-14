@@ -35,7 +35,7 @@ public class Works15_Test extends SeleniumBase {
          }
          });*/
         
-        System.out.println("Page title is: " + driver.getTitle());
+        System.out.println("MultiView Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
         
         driver.quit();
     }

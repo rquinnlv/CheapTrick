@@ -12,7 +12,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //@Listeners(ScreenshotListener.class)
-public class Works_Test extends SeleniumBase {
+public class Works10_Test extends SeleniumBase {
     
     @Test
     public void HomePageTest() throws Exception {

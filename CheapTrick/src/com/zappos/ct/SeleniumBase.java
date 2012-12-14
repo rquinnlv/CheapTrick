@@ -1,5 +1,7 @@
 package com.zappos.ct;
 
+
+
 import com.opera.core.systems.OperaDriver;
 
 import junit.framework.TestCase;
@@ -7,6 +9,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.*;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import java.util.concurrent.TimeUnit;
@@ -21,128 +25,120 @@ public class SeleniumBase {
 
 	public static BrowserType browserType = null;
 	private final static long MULTI_THREAD_START_UP_DELAY = 5000;
-	private static List<WebDriver> webDrivers = Collections.synchronizedList(new ArrayList<WebDriver>());
-//	private static ThreadLocal<WebDriver> driverForThread = new ThreadLocal<WebDriver>() {
-//
-//
-//		@Override
-//		protected WebDriver initialValue() {
-//			if (webDrivers.size() > 0) {
-//				try {
-//					Thread.sleep(MULTI_THREAD_START_UP_DELAY);
-//				} catch (InterruptedException e) {
-//					e.printStackTrace();
-//				}
-//			}
-//			WebDriver driver = loadWebDriver();
-//			webDrivers.add(driver);
-//			return driver;
-//		}
-//	};
-//
-//	@BeforeSuite
-//	public static void setUpTest() {
-//		//set browser property
-//		if (System.getProperty("ct.browser") == null) {
-//			System.setProperty("ct.browser", "firefox");
-//		}
-//
-//		if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
-//			browserType = BrowserType.IE;
-//		} else if (System.getProperty("ct.browser").toLowerCase().equals("firefox")) {
-//			browserType = BrowserType.FIREFOX;
-//		} else if (System.getProperty("ct.browser").toLowerCase().equals("chrome")) {
-//			browserType = BrowserType.CHROME;
-//		} else if (System.getProperty("ct.browser").toLowerCase().equals("opera")) {
-//			browserType = BrowserType.OPERA;
-//		} else if (System.getProperty("ct.browser").toLowerCase().equals("safari")) {
-//			browserType = BrowserType.SAFARI;
-//		} else if (System.getProperty("ct.browser").toLowerCase().equals("htmlunit")) {
-//			browserType = BrowserType.HTMLUNIT;
-//		}	
-//
-//	}
-	
-	 public static WebDriver driver;
-	 
-	 @BeforeSuite
-	 public void setUp() throws Exception {
-		 
-		//set browser property
-		 if (System.getProperty("ct.browser") == null) {
-			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 } else if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
-			 DesiredCapabilities abilities = DesiredCapabilities.internetExplorer();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 } else if (System.getProperty("ct.browser").toLowerCase().equals("firefox")) {
-			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 } else if (System.getProperty("ct.browser").toLowerCase().equals("chrome")) {
-			 DesiredCapabilities abilities = DesiredCapabilities.chrome();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 } else if (System.getProperty("ct.browser").toLowerCase().equals("opera")) {
-			 DesiredCapabilities abilities = DesiredCapabilities.opera();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 } else if (System.getProperty("ct.browser").toLowerCase().equals("safari")) {
-			 DesiredCapabilities abilities = DesiredCapabilities.safari();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 } else if (System.getProperty("ct.browser").toLowerCase().equals("htmlunit")) {
-			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
-			 driver = new RemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
-		 }
+	private static List<RemoteWebDriver> RemoteWebDrivers = Collections.synchronizedList(new ArrayList<RemoteWebDriver>());
+	private static ThreadLocal<RemoteWebDriver> driverForThread = new ThreadLocal<RemoteWebDriver>() {
 
-	 }
-	 
-	 protected static WebDriver getDriver() {
-		return driver;
-	 }
+
+		@Override
+		protected RemoteWebDriver initialValue() {
+			if (RemoteWebDrivers.size() > 0) {
+				try {
+					Thread.sleep(MULTI_THREAD_START_UP_DELAY);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			RemoteWebDriver driver = null;
+			try {
+				driver = loadRemoteWebDriver();
+			} catch (MalformedURLException e) {
+				
+				e.printStackTrace();
+			}
+			RemoteWebDrivers.add(driver);
+			return driver;
+		}
+	};
+
+	@BeforeSuite
+	public static void setUpTest() {
+		//set browser property
+		if (System.getProperty("ct.browser") == null) {
+			System.setProperty("ct.browser", "firefox");
+		}
+
+		if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
+			browserType = BrowserType.IE;
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("firefox")) {
+			browserType = BrowserType.FIREFOX;
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("chrome")) {
+			browserType = BrowserType.CHROME;
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("opera")) {
+			browserType = BrowserType.OPERA;
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("safari")) {
+			browserType = BrowserType.SAFARI;
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("htmlunit")) {
+			browserType = BrowserType.HTMLUNIT;
+		}	
+
+	}
+	
+//	 public static RemoteWebDriver driver;
+//	 
+//	 @BeforeSuite
+//	 public void setUp() throws Exception {
+//		 
+//		//set browser property
+//		 if (System.getProperty("ct.browser") == null) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 } else if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.internetExplorer();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 } else if (System.getProperty("ct.browser").toLowerCase().equals("firefox")) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 } else if (System.getProperty("ct.browser").toLowerCase().equals("chrome")) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.chrome();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 } else if (System.getProperty("ct.browser").toLowerCase().equals("opera")) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.opera();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 } else if (System.getProperty("ct.browser").toLowerCase().equals("safari")) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.safari();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 } else if (System.getProperty("ct.browser").toLowerCase().equals("htmlunit")) {
+//			 DesiredCapabilities abilities = DesiredCapabilities.firefox();
+//			 driver = new RemoteRemoteWebDriver( new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		 }
+//
+//	 }
+
+
 
 	@AfterSuite
 	public static void tearDown() {
-		for (WebDriver driver : webDrivers) {
+		for (RemoteWebDriver driver : RemoteWebDrivers) {
 			driver.quit();
 		}
 	}
 
-//	private static WebDriver loadWebDriver() {
-//		System.out.println("Current Operating System: " + System.getProperties().getProperty("os.name"));
-//		System.out.println("Current Architecture: " + System.getProperties().getProperty("os.arch"));
-//		System.out.println("Current Browser Selection: " + browserType);
-//
-//		//Instantiate driver object
-//		switch (browserType) {
-//		case FIREFOX:
-//			DesiredCapabilities abilities = DesiredCapabilities.firefox();
-//			return new FirefoxDriver();
-//		case CHROME:
-//			DesiredCapabilities chromeCaps = DesiredCapabilities.chrome();
-//			chromeCaps.setCapability("chrome.switches", Arrays.asList("--no-default-browser-check"));
-//
-//			return new ChromeDriver(chromeCaps);
-//		case IE:
-//
-//			DesiredCapabilities ieCaps = DesiredCapabilities.internetExplorer();
-//			ieCaps.setCapability("enablePersistantHover", false);
-//
-//			return new InternetExplorerDriver(ieCaps);
-//		case SAFARI:
-//			DesiredCapabilities safariCaps = DesiredCapabilities.safari();
-//			safariCaps.setCapability("safari.cleanSession", true);
-//
-//			return new SafariDriver(safariCaps);
-//		case OPERA:
-//			DesiredCapabilities operaCaps = DesiredCapabilities.opera();
-//			operaCaps.setCapability("opera.arguments", "-nowin -nomail");
-//
-//			return new OperaDriver(operaCaps);
-//		default:
-//			DesiredCapabilities htmlUnitCaps = DesiredCapabilities.htmlUnit();
-//			htmlUnitCaps.setCapability("javascriptEnabled", "true");
-//
-//			return new HtmlUnitDriver(htmlUnitCaps);
-//		}
-//	}
-
+	private static RemoteWebDriver loadRemoteWebDriver() throws MalformedURLException{
+		System.out.println("Current Operating System: " + System.getProperties().getProperty("os.name"));
+		System.out.println("Current Architecture: " + System.getProperties().getProperty("os.arch"));
+		System.out.println("Current Browser Selection: " + browserType);
+		DesiredCapabilities abilities;
+		//Instantiate driver object
+		switch (browserType) {
+		case FIREFOX:
+			abilities = DesiredCapabilities.firefox();
+		case CHROME:
+			abilities = DesiredCapabilities.chrome();
+		case IE:
+			abilities = DesiredCapabilities.internetExplorer();
+		case SAFARI:
+			abilities = DesiredCapabilities.safari();
+		case OPERA:
+			abilities = DesiredCapabilities.opera();
+		default:
+			abilities = DesiredCapabilities.firefox();
+		}
+		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+		
+		return driver;
+	}
+	 protected static RemoteWebDriver getDriver() {
+		 return driverForThread.get();
+	 }
 
 }

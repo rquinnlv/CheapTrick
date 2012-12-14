@@ -8,35 +8,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.*;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //@Listeners(ScreenshotListener.class)
 public class Works_Test extends SeleniumBase {
 
-  @Test
-  public void HomePageTest() throws Exception {
-	  
-	  WebDriver driver = getDriver();
-	  
-	  Thread.sleep(2000);
-	  
-      driver.get("http://www.zappos.com");
+	@Test
+	public void HomePageTest() throws Exception {
 
-      WebElement element = driver.findElement(By.name("term"));
+		RemoteWebDriver driver = getDriver();
 
-      element.sendKeys("Green Shoes");
+		Thread.sleep(2000);
 
-      element.submit();
+		driver.get("http://www.zappos.com");
 
-/*    (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-      public Boolean apply(WebDriver d) {
-        return d.getTitle().toLowerCase().startsWith("green shoes");
-      }
-    });*/
+		WebElement element = driver.findElement(By.name("term"));
 
-    System.out.println("Search Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
+		element.sendKeys("Green Shoes");
 
-    driver.quit();
-  }
+		element.submit();
+
+		System.out.println("Search Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
+
+		driver.quit();
+	}
 }

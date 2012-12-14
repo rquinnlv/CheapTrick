@@ -13,6 +13,7 @@ import com.zappos.ct.SeleniumBase;
             
 //@Listeners(ScreenshotListener.class)
 public class Fail1_Test extends SeleniumBase {
+	
     @Test
     public static void HomePageFail() {
                             

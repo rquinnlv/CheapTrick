@@ -13,30 +13,24 @@ import org.testng.annotations.Test;
 
 //@Listeners(ScreenshotListener.class)
 public class Works1_Test extends SeleniumBase {
-    
-    @Test
-    public void HomePageTest() throws Exception {
-        
-        WebDriver driver = getDriver();
-        
-        Thread.sleep(2000);
-        
-        driver.get("http://www.zappos.com");
-        
-        WebElement element = driver.findElement(By.name("term"));
-        
-        element.sendKeys("Green Shoes");
-        
-        element.submit();
-        
-        /*    (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-         public Boolean apply(WebDriver d) {
-         return d.getTitle().toLowerCase().startsWith("green shoes");
-         }
-         });*/
-        
-        System.out.println("Product Page Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
 
-        driver.quit();
-    }
+	@Test
+	public void HomePageTest() throws Exception {
+
+		WebDriver driver = getDriver();
+
+		Thread.sleep(2000);
+
+		driver.get("http://www.zappos.com");
+
+		WebElement element = driver.findElement(By.name("term"));
+
+		element.sendKeys("Green Shoes");
+
+		element.submit();
+
+		System.out.println("Product Page Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
+
+		driver.quit();
+	}
 }

@@ -19,7 +19,6 @@ public class Fail_Test extends SeleniumBase {
 		
         // Create a new instance of the html unit driver
         // Notice that the remainder of the code relies on the interface, 
-        // not the implementation.
         WebDriver driver = getDriver();
 
         // And now use this to visit Zappos homepage

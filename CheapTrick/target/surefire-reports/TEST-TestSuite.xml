@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="20" time="68.653" errors="0" skipped="0" tests="28" name="TestSuite">
+<testsuite failures="10" time="30.261" errors="0" skipped="0" tests="11" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -22,7 +22,7 @@
     <property name="basedir" value="/Users/rqlocal/git/CheapTrick/CheapTrick"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/rqlocal/git/CheapTrick/CheapTrick/target/surefire/surefirebooter7411266296048209897.jar"/>
+    <property name="surefire.real.class.path" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefirebooter6066558039382808059.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/"/>
     <property name="line.separator" value="
 "/>
@@ -47,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/Users/rqlocal/git/CheapTrick/CheapTrick/target/surefire/surefirebooter7411266296048209897.jar /Users/rqlocal/git/CheapTrick/CheapTrick/target/surefire/surefire15349771648466530tmp /Users/rqlocal/git/CheapTrick/CheapTrick/target/surefire/surefire677720706678830809tmp"/>
+    <property name="sun.java.command" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefirebooter6066558039382808059.jar /var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefire179311933670715900tmp /var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefire8549026193073021786tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -63,19 +63,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="mrj.version" value="1070.1.6.0_37-434"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="argLine" value="-Dct.browser=firefox"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="3.638" classname="com.zappos.ct.tests.Fail1_Test" name="HomePageFail"/>
-  <testcase time="2.744" classname="com.zappos.ct.tests.Fail2_Test" name="HomePageFail"/>
-  <testcase time="2.384" classname="com.zappos.ct.tests.Fail3_Test" name="HomePageFail"/>
-  <testcase time="2.606" classname="com.zappos.ct.tests.Fail4_Test" name="HomePageFail"/>
-  <testcase time="2.484" classname="com.zappos.ct.tests.Fail5_Test" name="HomePageFail"/>
-  <testcase time="2.79" classname="com.zappos.ct.tests.Fail6_Test" name="HomePageFail"/>
-  <testcase time="2.718" classname="com.zappos.ct.tests.Fail_Test" name="HomePageFail"/>
-  <testcase time="5.831" classname="com.zappos.ct.tests.Works10_Test" name="HomePageTest"/>
-  <testcase time="2.008" classname="com.zappos.ct.tests.Works11_Test" name="HomePageTest">
+  <testcase time="9.651" classname="com.zappos.ct.tests.Works10_Test" name="HomePageTest"/>
+  <testcase time="2.003" classname="com.zappos.ct.tests.Works11_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -89,7 +81,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works11_Test.HomePageTest(Works11_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.013" classname="com.zappos.ct.tests.Works12_Test" name="HomePageTest">
+  <testcase time="2.001" classname="com.zappos.ct.tests.Works12_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -103,7 +95,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works12_Test.HomePageTest(Works12_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.004" classname="com.zappos.ct.tests.Works13_Test" name="HomePageTest">
+  <testcase time="2.001" classname="com.zappos.ct.tests.Works13_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -117,7 +109,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works13_Test.HomePageTest(Works13_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.004" classname="com.zappos.ct.tests.Works14_Test" name="HomePageTest">
+  <testcase time="2.001" classname="com.zappos.ct.tests.Works14_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -131,7 +123,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works14_Test.HomePageTest(Works14_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works15_Test" name="HomePageTest">
+  <testcase time="2.001" classname="com.zappos.ct.tests.Works15_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -145,7 +137,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works15_Test.HomePageTest(Works15_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works16_Test" name="HomePageTest">
+  <testcase time="2.002" classname="com.zappos.ct.tests.Works16_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -159,7 +151,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works16_Test.HomePageTest(Works16_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.002" classname="com.zappos.ct.tests.Works17_Test" name="HomePageTest">
+  <testcase time="2.001" classname="com.zappos.ct.tests.Works17_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -187,7 +179,7 @@ Driver info: driver.version: RemoteWebDriver
 	at com.zappos.ct.tests.Works18_Test.HomePageTest(Works18_Test.java:24)
 </failure>
   </testcase>
-  <testcase time="2.004" classname="com.zappos.ct.tests.Works19_Test" name="HomePageTest">
+  <testcase time="2.002" classname="com.zappos.ct.tests.Works19_Test" name="HomePageTest">
     <failure message="Session ID is null
 Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
@@ -199,20 +191,6 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
 	at com.zappos.ct.tests.Works19_Test.HomePageTest(Works19_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.004" classname="com.zappos.ct.tests.Works1_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works1_Test.HomePageTest(Works1_Test.java:24)
 </failure>
   </testcase>
   <testcase time="2.002" classname="com.zappos.ct.tests.Works20_Test" name="HomePageTest">
@@ -227,132 +205,6 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
 	at com.zappos.ct.tests.Works20_Test.HomePageTest(Works20_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works2_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works2_Test.HomePageTest(Works2_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works3_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works3_Test.HomePageTest(Works3_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works4_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works4_Test.HomePageTest(Works4_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.004" classname="com.zappos.ct.tests.Works5_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works5_Test.HomePageTest(Works5_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works6_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works6_Test.HomePageTest(Works6_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works7_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works7_Test.HomePageTest(Works7_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.002" classname="com.zappos.ct.tests.Works8_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works8_Test.HomePageTest(Works8_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.004" classname="com.zappos.ct.tests.Works9_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works9_Test.HomePageTest(Works9_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works_Test.HomePageTest(Works_Test.java:24)
 </failure>
   </testcase>
 </testsuite>

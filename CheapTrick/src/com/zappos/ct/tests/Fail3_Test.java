@@ -12,7 +12,7 @@ import com.zappos.ct.ScreenshotListener;
 import com.zappos.ct.SeleniumBase;
 
 @Listeners(ScreenshotListener.class)
-public class Fail_Test extends SeleniumBase {
+public class Fail3_Test extends SeleniumBase {
 	
 	@Test
     public static void HomePageFail() {
@@ -21,22 +21,22 @@ public class Fail_Test extends SeleniumBase {
         // Notice that the remainder of the code relies on the interface, 
         // not the implementation.
         WebDriver driver = getDriver();
-
+        
         // And now use this to visit Zappos homepage
         driver.get("http://www.zappos.com");
-
+        
         // Check the title of the page
         String helpLinks = new String();
         try {
             driver.findElement(By.id("helpLinks")).getText();// element fails to match foo
             driver.findElement(By.name("helpLinks")).getText();// fails to find element
             if (!helpLinks.equals("foo"))
-                System.out.println("Failure");   
+                System.out.println("Failure3");   
         } 
         catch (NoSuchElementException e) {
-            System.out.println("couldnt find element!");
+            System.out.println("couldnt find element-t3!");
         }
-
+        
     }
-
+    
 }

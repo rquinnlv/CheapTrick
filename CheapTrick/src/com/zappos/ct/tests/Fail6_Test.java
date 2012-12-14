@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.zappos.ct.ScreenshotListener;
 import com.zappos.ct.SeleniumBase;
 
-@Listeners(ScreenshotListener.class)
+//@Listeners(ScreenshotListener.class)
 public class Fail6_Test extends SeleniumBase {
 	
 	@Test
@@ -25,16 +25,18 @@ public class Fail6_Test extends SeleniumBase {
         // And now use this to visit Zappos homepage
         driver.get("http://www.zappos.com");
         
+        String stackTrace = "com.thoughtworks.selenium.SeleniumException: ERROR: Element //*[@id='searchResults']/a[1]/span[3]/span[@class='price'] not found at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112) at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106) at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:275) at com.thoughtworks.selenium.DefaultSeleniumZappos.getText(DefaultSeleniumZappos.java:634) at com.zappos.ztaf.module.navigation.search.SearchResultTest.verifySalePriceOnProductPage(SearchResultTest.java:78) at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) at java.lang.Thread.run(Thread.java:619) ... Removed 17 stack frames";
+        
         // Check the title of the page
         String helpLinks = new String();
         try {
             driver.findElement(By.id("helpLinks")).getText();// element fails to match foo
             driver.findElement(By.name("helpLinks")).getText();// fails to find element
             if (!helpLinks.equals("foo"))
-                System.out.println("Failure6");   
+            	System.out.println("Account Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png");
         } 
         catch (NoSuchElementException e) {
-            System.out.println("couldnt find element-t6!");
+        	System.out.println("Account Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png");
         }
         
     }

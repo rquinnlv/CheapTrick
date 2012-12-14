@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test Suite" parallel="tests" thread-count="10" >
+
+<!-- Navigational Search Start -->
+<test verbose="2" name="CheapTrick" annotations="JDK">
+
+	<classes>
+   
+		<class name="com.zappos.ct.tests.*"/>
+
+    </classes>    
+            
+</test> 
+</suite>

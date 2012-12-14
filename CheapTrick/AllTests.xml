@@ -2,7 +2,7 @@
 	
 	<test verbose="2" name="Works" annotations="JDK">
 		<classes>
-			<class name="com.zappos.ct.tests.works" />
+			<class name="com.zappos.ct.tests.*" />
 		</classes>
 	</test>
 	

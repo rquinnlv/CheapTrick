@@ -3,12 +3,143 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.zappos.ct.tests.Works_Test">
+      <class name="com.zappos.ct.tests.Works9_Test">
         <methods>
           <include name="setUp"/>
           <include name="HomePageTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works9_Test -->
+      <class name="com.zappos.ct.tests.Works10_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works10_Test -->
+      <class name="com.zappos.ct.tests.Fail2_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail2_Test -->
+      <class name="com.zappos.ct.tests.Works1_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works1_Test -->
+      <class name="com.zappos.ct.tests.Fail_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail_Test -->
+      <class name="com.zappos.ct.tests.Works12_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works12_Test -->
+      <class name="com.zappos.ct.tests.Works4_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works4_Test -->
+      <class name="com.zappos.ct.tests.Works13_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works13_Test -->
+      <class name="com.zappos.ct.tests.Works17_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works17_Test -->
+      <class name="com.zappos.ct.tests.Fail1_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail1_Test -->
+      <class name="com.zappos.ct.tests.Works16_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works16_Test -->
+      <class name="com.zappos.ct.tests.Works11_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works11_Test -->
+      <class name="com.zappos.ct.tests.Works_Test">
+        <methods>
+          <include name="HomePageTest"/>
         </methods>
       </class> <!-- com.zappos.ct.tests.Works_Test -->
+      <class name="com.zappos.ct.tests.Works5_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works5_Test -->
+      <class name="com.zappos.ct.tests.Works7_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works7_Test -->
+      <class name="com.zappos.ct.tests.Fail6_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail6_Test -->
+      <class name="com.zappos.ct.tests.Fail5_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail5_Test -->
+      <class name="com.zappos.ct.tests.Fail4_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail4_Test -->
+      <class name="com.zappos.ct.tests.Works18_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works18_Test -->
+      <class name="com.zappos.ct.tests.Works19_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works19_Test -->
+      <class name="com.zappos.ct.tests.Works14_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works14_Test -->
+      <class name="com.zappos.ct.tests.Works20_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works20_Test -->
+      <class name="com.zappos.ct.tests.Works3_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works3_Test -->
+      <class name="com.zappos.ct.tests.Fail3_Test">
+        <methods>
+          <include name="HomePageFail"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Fail3_Test -->
+      <class name="com.zappos.ct.tests.Works2_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works2_Test -->
+      <class name="com.zappos.ct.tests.Works15_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works15_Test -->
+      <class name="com.zappos.ct.tests.Works6_Test">
+        <methods>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.zappos.ct.tests.Works6_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

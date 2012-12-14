@@ -17,7 +17,7 @@ public class Works10_Test extends SeleniumBase {
     @Test
     public void HomePageTest() throws Exception {
         
-        WebDriver drive10r = getDriver();
+        WebDriver driver = getDriver();
         
         Thread.sleep(2000);
         

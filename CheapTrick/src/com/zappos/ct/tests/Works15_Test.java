@@ -38,7 +38,7 @@ public class Works15_Test extends SeleniumBase {
         try{
         	  FileWriter fstream = new FileWriter("../../idontcare.txt",true);
         	  BufferedWriter out = new BufferedWriter(fstream);
-        	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace" + " " + "\n");
+        	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace" + "," + " " + "\n");
         	  out.close();
         	  }catch (Exception e){//Catch exception if any
         	  System.err.println("Error: " + e.getMessage());

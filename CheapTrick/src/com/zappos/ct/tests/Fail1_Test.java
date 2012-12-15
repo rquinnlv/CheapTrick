@@ -29,7 +29,7 @@ public class Fail1_Test extends SeleniumBase {
          // Check the title of the page
          String helpLinks = new String();
          try{
-        	  FileWriter fstream = new FileWriter("idontcare.txt",true);
+        	  FileWriter fstream = new FileWriter("../../idontcare.txt",true);
         	  BufferedWriter out = new BufferedWriter(fstream);
         	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png"+"\n");
         	  out.close();

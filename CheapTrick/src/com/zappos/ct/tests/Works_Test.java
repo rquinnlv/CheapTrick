@@ -32,7 +32,7 @@ public class Works_Test extends SeleniumBase {
 
 		System.out.println("Search Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
 		try{
-        	  FileWriter fstream = new FileWriter("idontcare.txt",true);
+        	  FileWriter fstream = new FileWriter("../../idontcare.txt",true);
         	  BufferedWriter out = new BufferedWriter(fstream);
         	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace" + " " + "\n");
         	  out.close();

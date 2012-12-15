@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9975" started-at="2012-12-14T22:55:06Z" finished-at="2012-12-14T22:55:16Z">
+  <suite name="Default suite" duration-ms="14967" started-at="2012-12-15T00:25:40Z" finished-at="2012-12-15T00:25:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9975" started-at="2012-12-14T22:55:06Z" finished-at="2012-12-14T22:55:16Z">
-      <class name="com.zappos.ct.tests.Works10_Test">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.zappos.ct.tests.Works10_Test@2f93c0cf]" name="setUpTest" is-config="true" duration-ms="8" started-at="2012-12-14T14:55:06Z" finished-at="2012-12-14T14:55:06Z">
+    <test name="Default test" duration-ms="14967" started-at="2012-12-15T00:25:40Z" finished-at="2012-12-15T00:25:55Z">
+      <class name="com.zappos.ct.tests.Works_Test">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.zappos.ct.tests.Works_Test@64633e5e]" name="setUpTest" is-config="true" duration-ms="8" started-at="2012-12-14T16:25:40Z" finished-at="2012-12-14T16:25:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="HomePageTest()[pri:0, instance:com.zappos.ct.tests.Works10_Test@2f93c0cf]" name="HomePageTest" duration-ms="9964" started-at="2012-12-14T14:55:06Z" finished-at="2012-12-14T14:55:16Z">
+        <test-method status="PASS" signature="HomePageTest()[pri:0, instance:com.zappos.ct.tests.Works_Test@64633e5e]" name="HomePageTest" duration-ms="14957" started-at="2012-12-14T16:25:40Z" finished-at="2012-12-14T16:25:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zappos.ct.tests.Works10_Test@2f93c0cf]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-12-14T14:55:16Z" finished-at="2012-12-14T14:55:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zappos.ct.tests.Works_Test@64633e5e]" name="tearDown" is-config="true" duration-ms="1" started-at="2012-12-14T16:25:55Z" finished-at="2012-12-14T16:25:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zappos.ct.tests.Works10_Test -->
+      </class> <!-- com.zappos.ct.tests.Works_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="10" time="30.261" errors="0" skipped="0" tests="11" name="TestSuite">
+<testsuite failures="0" time="100.247" errors="0" skipped="0" tests="28" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -22,7 +22,7 @@
     <property name="basedir" value="/Users/rqlocal/git/CheapTrick/CheapTrick"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefirebooter6066558039382808059.jar"/>
+    <property name="surefire.real.class.path" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefirebooter8212237436179813691.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/"/>
     <property name="line.separator" value="
 "/>
@@ -43,11 +43,11 @@
     <property name="file.encoding" value="MacRoman"/>
     <property name="user.name" value="rqlocal"/>
     <property name="java.class.path" value="/Users/rqlocal/git/CheapTrick/CheapTrick/target/test-classes:/Users/rqlocal/git/CheapTrick/CheapTrick/target/classes:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-server/2.28.0/selenium-server-2.28.0.jar:/Users/rqlocal/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar:/Users/rqlocal/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.47/bcpkix-jdk15on-1.47.jar:/Users/rqlocal/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/rqlocal/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.9/servlet-api-2.5-6.1.9.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/jetty-repacked/7.6.1/jetty-repacked-7.6.1.jar:/Users/rqlocal/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-java/2.28.0/selenium-java-2.28.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-android-driver/2.28.0/selenium-android-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.28.0/selenium-remote-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/rqlocal/.m2/repository/org/json/json/20080701/json-20080701.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.28.0/selenium-chrome-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.28.0/selenium-htmlunit-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-api/2.28.0/selenium-api-2.28.0.jar:/Users/rqlocal/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.11/htmlunit-2.11.jar:/Users/rqlocal/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar:/Users/rqlocal/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar:/Users/rqlocal/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/rqlocal/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar:/Users/rqlocal/.m2/repository/org/apache/httpcomponents/httpmime/4.2.2/httpmime-4.2.2.jar:/Users/rqlocal/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.11/htmlunit-core-js-2.11.jar:/Users/rqlocal/.m2/repository/xerces/xercesImpl/2.10.0/xercesImpl-2.10.0.jar:/Users/rqlocal/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/rqlocal/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.17/nekohtml-1.9.17.jar:/Users/rqlocal/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.8/cssparser-0.9.8.jar:/Users/rqlocal/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/rqlocal/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/rqlocal/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.7.v20120910/jetty-websocket-8.1.7.v20120910.jar:/Users/rqlocal/.m2/repository/org/eclipse/jetty/jetty-util/8.1.7.v20120910/jetty-util-8.1.7.v20120910.jar:/Users/rqlocal/.m2/repository/org/eclipse/jetty/jetty-io/8.1.7.v20120910/jetty-io-8.1.7.v20120910.jar:/Users/rqlocal/.m2/repository/org/eclipse/jetty/jetty-http/8.1.7.v20120910/jetty-http-8.1.7.v20120910.jar:/Users/rqlocal/.m2/repository/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.jar:/Users/rqlocal/.m2/repository/org/apache/httpcomponents/httpcore/4.2.1/httpcore-4.2.1.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.28.0/selenium-firefox-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.28.0/selenium-ie-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar:/Users/rqlocal/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-iphone-driver/2.28.0/selenium-iphone-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.28.0/selenium-safari-driver-2.28.0.jar:/Users/rqlocal/.m2/repository/org/seleniumhq/selenium/selenium-support/2.28.0/selenium-support-2.28.0.jar:/Users/rqlocal/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/rqlocal/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/rqlocal/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/rqlocal/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/Users/rqlocal/.m2/repository/com/opera/operadriver/0.18/operadriver-0.18.jar:/Users/rqlocal/.m2/repository/com/opera/operalaunchers/1.1/operalaunchers-1.1.jar:/Users/rqlocal/.m2/repository/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar:/Users/rqlocal/.m2/repository/com/google/guava/guava/12.0.1/guava-12.0.1.jar:/Users/rqlocal/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/rqlocal/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar:/Users/rqlocal/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar:/Users/rqlocal/.m2/repository/org/ini4j/ini4j/0.5.2/ini4j-0.5.2.jar:/Users/rqlocal/.m2/repository/org/testng/testng/6.8/testng-6.8.jar:/Users/rqlocal/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/rqlocal/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/rqlocal/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/rqlocal/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:"/>
-    <property name="ct.browser" value="firefox"/>
+    <property name="ct.browser" value="chrome"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefirebooter6066558039382808059.jar /var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefire179311933670715900tmp /var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefire8549026193073021786tmp"/>
+    <property name="sun.java.command" value="/var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefirebooter8212237436179813691.jar /var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefire1032543205900801932tmp /var/folders/fq/24cmmrz11_n2pd9ntf_84fkw0000gp/T/surefire6467027192032010728tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -66,145 +66,32 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="9.651" classname="com.zappos.ct.tests.Works10_Test" name="HomePageTest"/>
-  <testcase time="2.003" classname="com.zappos.ct.tests.Works11_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works11_Test.HomePageTest(Works11_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.001" classname="com.zappos.ct.tests.Works12_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works12_Test.HomePageTest(Works12_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.001" classname="com.zappos.ct.tests.Works13_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works13_Test.HomePageTest(Works13_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.001" classname="com.zappos.ct.tests.Works14_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works14_Test.HomePageTest(Works14_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.001" classname="com.zappos.ct.tests.Works15_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works15_Test.HomePageTest(Works15_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.002" classname="com.zappos.ct.tests.Works16_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works16_Test.HomePageTest(Works16_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.001" classname="com.zappos.ct.tests.Works17_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works17_Test.HomePageTest(Works17_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.002" classname="com.zappos.ct.tests.Works18_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works18_Test.HomePageTest(Works18_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.002" classname="com.zappos.ct.tests.Works19_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works19_Test.HomePageTest(Works19_Test.java:24)
-</failure>
-  </testcase>
-  <testcase time="2.002" classname="com.zappos.ct.tests.Works20_Test" name="HomePageTest">
-    <failure message="Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.2&apos;, java.version: &apos;1.6.0_37&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:289)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.zappos.ct.tests.Works20_Test.HomePageTest(Works20_Test.java:24)
-</failure>
-  </testcase>
+  <testcase time="14.4" classname="com.zappos.ct.tests.Fail2_Test" name="HomePageFail"/>
+  <testcase time="15.298" classname="com.zappos.ct.tests.Fail6_Test" name="HomePageFail"/>
+  <testcase time="15.949" classname="com.zappos.ct.tests.Fail5_Test" name="HomePageFail"/>
+  <testcase time="17.879" classname="com.zappos.ct.tests.Fail4_Test" name="HomePageFail"/>
+  <testcase time="19.776" classname="com.zappos.ct.tests.Fail1_Test" name="HomePageFail"/>
+  <testcase time="21.41" classname="com.zappos.ct.tests.Fail3_Test" name="HomePageFail"/>
+  <testcase time="23.285" classname="com.zappos.ct.tests.Works4_Test" name="HomePageTest"/>
+  <testcase time="24.723" classname="com.zappos.ct.tests.Works8_Test" name="HomePageTest"/>
+  <testcase time="26.291" classname="com.zappos.ct.tests.Works12_Test" name="HomePageTest"/>
+  <testcase time="26.438" classname="com.zappos.ct.tests.Works14_Test" name="HomePageTest"/>
+  <testcase time="26.868" classname="com.zappos.ct.tests.Works9_Test" name="HomePageTest"/>
+  <testcase time="28.346" classname="com.zappos.ct.tests.Works2_Test" name="HomePageTest"/>
+  <testcase time="29.154" classname="com.zappos.ct.tests.Works16_Test" name="HomePageTest"/>
+  <testcase time="30.275" classname="com.zappos.ct.tests.Fail_Test" name="HomePageFail"/>
+  <testcase time="31.527" classname="com.zappos.ct.tests.Works10_Test" name="HomePageTest"/>
+  <testcase time="31.577" classname="com.zappos.ct.tests.Works19_Test" name="HomePageTest"/>
+  <testcase time="34.446" classname="com.zappos.ct.tests.Works15_Test" name="HomePageTest"/>
+  <testcase time="34.447" classname="com.zappos.ct.tests.Works13_Test" name="HomePageTest"/>
+  <testcase time="36.597" classname="com.zappos.ct.tests.Works3_Test" name="HomePageTest"/>
+  <testcase time="38.508" classname="com.zappos.ct.tests.Works6_Test" name="HomePageTest"/>
+  <testcase time="39.305" classname="com.zappos.ct.tests.Works17_Test" name="HomePageTest"/>
+  <testcase time="40.774" classname="com.zappos.ct.tests.Works11_Test" name="HomePageTest"/>
+  <testcase time="40.845" classname="com.zappos.ct.tests.Works20_Test" name="HomePageTest"/>
+  <testcase time="44.497" classname="com.zappos.ct.tests.Works1_Test" name="HomePageTest"/>
+  <testcase time="44.559" classname="com.zappos.ct.tests.Works5_Test" name="HomePageTest"/>
+  <testcase time="44.893" classname="com.zappos.ct.tests.Works18_Test" name="HomePageTest"/>
+  <testcase time="46.294" classname="com.zappos.ct.tests.Works_Test" name="HomePageTest"/>
+  <testcase time="46.36" classname="com.zappos.ct.tests.Works7_Test" name="HomePageTest"/>
 </testsuite>

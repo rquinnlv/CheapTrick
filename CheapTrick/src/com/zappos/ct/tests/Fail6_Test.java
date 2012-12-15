@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import com.zappos.ct.ScreenshotListener;
 import com.zappos.ct.SeleniumBase;
-
+import java.io.*;
 //@Listeners(ScreenshotListener.class)
 public class Fail6_Test extends SeleniumBase {
 	
@@ -29,15 +29,14 @@ public class Fail6_Test extends SeleniumBase {
         
         // Check the title of the page
         String helpLinks = new String();
-        try {
-            driver.findElement(By.id("helpLinks")).getText();// element fails to match foo
-            driver.findElement(By.name("helpLinks")).getText();// fails to find element
-            if (!helpLinks.equals("foo"))
-            	System.out.println("Account Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png");
-        } 
-        catch (NoSuchElementException e) {
-        	System.out.println("Account Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png");
-        }
+        try{
+        	  FileWriter fstream = new FileWriter("idontcare.txt",true);
+        	  BufferedWriter out = new BufferedWriter(fstream);
+        	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png"+"\n");
+        	  out.close();
+        	  }catch (Exception e){//Catch exception if any
+        	  System.err.println("Error: " + e.getMessage());
+        	  }
         
     }
     

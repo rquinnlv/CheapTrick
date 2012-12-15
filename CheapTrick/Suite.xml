@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CheapTrick" parallel="classes" thread-count="30" >
+
+<!-- Navigational Search Start -->
+<test verbose="2" name="CheapTrick" annotations="JDK">
+
+<classes>
+   
+<class name="com.zappos.ct.tests.Fail_Test"/>
+<class name="com.zappos.ct.tests.Fail1_Test"/>
+<class name="com.zappos.ct.tests.Fail2_Test"/>
+<class name="com.zappos.ct.tests.Fail3_Test"/>
+<class name="com.zappos.ct.tests.Fail4_Test"/>
+<class name="com.zappos.ct.tests.Fail5_Test"/>
+<class name="com.zappos.ct.tests.Fail6_Test"/>
+<class name="com.zappos.ct.tests.Works_Test"/>
+<class name="com.zappos.ct.tests.Works1_Test"/>
+<class name="com.zappos.ct.tests.Works2_Test"/>
+<class name="com.zappos.ct.tests.Works3_Test"/>
+<class name="com.zappos.ct.tests.Works4_Test"/>
+<class name="com.zappos.ct.tests.Works5_Test"/>
+<class name="com.zappos.ct.tests.Works6_Test"/>
+<class name="com.zappos.ct.tests.Works7_Test"/>
+<class name="com.zappos.ct.tests.Works8_Test"/>
+<class name="com.zappos.ct.tests.Works9_Test"/>
+<class name="com.zappos.ct.tests.Works10_Test"/>
+<class name="com.zappos.ct.tests.Works11_Test"/>
+<class name="com.zappos.ct.tests.Works12_Test"/>
+<class name="com.zappos.ct.tests.Works13_Test"/>
+<class name="com.zappos.ct.tests.Works14_Test"/>
+<class name="com.zappos.ct.tests.Works15_Test"/>
+<class name="com.zappos.ct.tests.Works16_Test"/>
+<class name="com.zappos.ct.tests.Works17_Test"/>
+<class name="com.zappos.ct.tests.Works18_Test"/>
+<class name="com.zappos.ct.tests.Works19_Test"/>
+<class name="com.zappos.ct.tests.Works20_Test"/>
+ 
+    </classes>
+            
+</test>
+</suite>

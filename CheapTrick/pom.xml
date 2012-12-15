@@ -127,7 +127,7 @@
 					<parallel>tests</parallel>
 					<threadCount>20</threadCount>
 					<suiteXmlFiles>
-						<suiteXmlFile>target/test-classes/Suite.xml</suiteXmlFile>
+						<suiteXmlFile>Suite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			  </plugin>

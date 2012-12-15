@@ -54,7 +54,7 @@ public class SeleniumBase {
 	public static void setUpTest() {
 		//set browser property
 		if (System.getProperty("ct.browser") == null) {
-			System.setProperty("ct.browser", "firefox");
+			System.setProperty("ct.browser", "chrome");
 		}
 
 		if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
@@ -117,24 +117,39 @@ public class SeleniumBase {
 		System.out.println("Current Operating System: " + System.getProperties().getProperty("os.name"));
 		System.out.println("Current Architecture: " + System.getProperties().getProperty("os.arch"));
 		System.out.println("Current Browser Selection: " + browserType);
-		DesiredCapabilities abilities;
-		//Instantiate driver object
-		switch (browserType) {
-		case FIREFOX:
-			abilities = DesiredCapabilities.firefox();
-		case CHROME:
-			abilities = DesiredCapabilities.chrome();
-		case IE:
-			abilities = DesiredCapabilities.internetExplorer();
-		case SAFARI:
-			abilities = DesiredCapabilities.safari();
-		case OPERA:
-			abilities = DesiredCapabilities.opera();
-		default:
-			abilities = DesiredCapabilities.firefox();
-		}
-		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://ec2-204-236-162-173.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
 		
+		DesiredCapabilities abilities = DesiredCapabilities.firefox();
+		//Instantiate driver object
+		
+		if (System.getProperty("ct.browser").toLowerCase().equals("ie")) {
+			abilities = DesiredCapabilities.internetExplorer();
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("firefox")) {
+			abilities = DesiredCapabilities.firefox();
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("chrome")) {
+			abilities = DesiredCapabilities.chrome();
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("opera")) {
+			abilities = DesiredCapabilities.opera();
+		} else if (System.getProperty("ct.browser").toLowerCase().equals("safari")) {
+			abilities = DesiredCapabilities.safari();
+		}	
+//		
+//		switch (browserType) {
+//		case FIREFOX:
+//			abilities = DesiredCapabilities.firefox();
+//		case CHROME:
+//			abilities = DesiredCapabilities.chrome();
+//		case IE:
+//			abilities = DesiredCapabilities.internetExplorer();
+//		case SAFARI:
+//			abilities = DesiredCapabilities.safari();
+//		case OPERA:
+//			abilities = DesiredCapabilities.opera();
+//		default:
+//			abilities = DesiredCapabilities.chrome();
+//		}
+		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://ec2-54-241-80-250.us-west-1.compute.amazonaws.com:4444/wd/hub"), abilities);
+//		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), abilities);
+
 		return driver;
 	}
 	 protected static RemoteWebDriver getDriver() {

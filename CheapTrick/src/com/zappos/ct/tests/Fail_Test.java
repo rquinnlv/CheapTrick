@@ -8,6 +8,8 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import java.io.*;
+
 import com.zappos.ct.ScreenshotListener;
 import com.zappos.ct.SeleniumBase;
 
@@ -37,7 +39,15 @@ public class Fail_Test extends SeleniumBase {
         catch (NoSuchElementException e) {
         	System.out.println("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png");
         }
-
+        
+        try{
+        	  FileWriter fstream = new FileWriter("idontcare.txt",true);
+        	  BufferedWriter out = new BufferedWriter(fstream);
+        	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "FAIL" + "," + stackTrace + "," + "/screenshots/1355361154529_HomePageTest.png"+"\n");
+        	  out.close();
+        	  }catch (Exception e){//Catch exception if any
+        	  System.err.println("Error: " + e.getMessage());
+        	  }
     }
 
 }

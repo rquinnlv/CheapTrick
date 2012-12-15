@@ -1,5 +1,8 @@
 package com.zappos.ct.tests;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 import com.zappos.ct.SeleniumBase;
 import com.zappos.ct.ScreenshotListener;
 import org.openqa.selenium.By;
@@ -35,8 +38,14 @@ public class Works9_Test extends SeleniumBase {
          }
          });*/
         
-        System.out.println("Cart Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace");
-        
+        try{
+        	  FileWriter fstream = new FileWriter("idontcare.txt",true);
+        	  BufferedWriter out = new BufferedWriter(fstream);
+        	  out.write("HomePage Test" + "," + System.getProperty("ct.browser") + "," + "PASS" + "," + "No Stacktrace" + " " + "\n");
+        	  out.close();
+        	  }catch (Exception e){//Catch exception if any
+        	  System.err.println("Error: " + e.getMessage());
+        	  }
         driver.quit();
     }
 }
